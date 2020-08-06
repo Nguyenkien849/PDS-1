@@ -1,0 +1,188 @@
+@mixin colorvsfont ($color, $fontSize){
+    color: $color;
+    font-size: $fontSize;
+}
+    
+
+
+
+
+
+.header {
+    background-image: url(../img/banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    .social {
+        border-bottom: 1px solid white;
+    }
+    a {
+        color: white;
+    }
+    .contact {
+        display: flex; 
+        justify-content: flex-end;   
+        border-bottom: 1px solid white;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .slogan {
+        @include colorvsfont(white,35px );
+        text-align: center;
+        margin-top: 150px;
+        p {
+            width: 800px;
+            margin-left: 160px;
+        }
+    }
+
+    .connected {
+        padding-left: 50px;
+        a {
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border: 2px solid white;
+            text-align: center;
+            border-radius: 25px;
+            &:hover {
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .phone {
+        padding-left: 350px;
+        a {
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border: 2px solid white;
+            text-align: center;
+            border-radius: 25px;
+            &:hover {
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.utility {
+    text-align: center;
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+.introduce {
+    .introduce-1 {
+        padding: 0px;
+            .icp {
+            background-color: #56d0d8;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            }
+            .itext {
+                text-align: justify;
+                margin-left: 80px;
+                margin-right: 40px;
+            }
+            .imore {
+                display: block;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #56d0d8;
+                text-align: center;
+                border-radius: 20px;
+                float: right;
+                margin-right:40px;
+                text-decoration: none;
+                &:hover {
+                    color: white;
+                    background-color: #56d0d8;
+                }
+            }
+    }
+    .event {
+        padding: 0px;
+    }
+}
+.service {
+    margin-top: 100px;
+    h2 {
+        text-align: center;
+    }
+    .service-1 {
+        display: block;
+        width: 255px;
+        margin-left: 250px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .service-2 {
+        display: block;
+        width: 255px;
+        margin-left: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .service-3 {
+        display: block;
+        width: 255px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .service-4 {
+        display: block;
+        width: 255px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .service-5 {
+        display: block;
+        width: 255px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .service-6 {
+        display: block;
+        width: 255px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+}
+.new {
+    h2{
+        text-align: center;
+    }
+}
+.footer {
+    background-image: url(../img/banner-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    .footer-1 {
+        padding-top: 150px;
+    }
+    .brand-3 {
+        p {
+            color: white;
+        }
+    }
+    .infor {
+        color: white;
+    }
+}
