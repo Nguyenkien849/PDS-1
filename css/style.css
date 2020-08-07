@@ -154,31 +154,7 @@
   color: black;
 }
 
-.service .service-3 {
-  display: block;
-  width: 255px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-.service .service-4 {
-  display: block;
-  width: 255px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-.service .service-5 {
-  display: block;
-  width: 255px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-.service .service-6 {
+.service .service-3, .service .service-4, .service .service-5, .service .service-6 {
   display: block;
   width: 255px;
   text-align: center;

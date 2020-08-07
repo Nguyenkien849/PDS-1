@@ -143,25 +143,13 @@
         color: black;
     }
     .service-4 {
-        display: block;
-        width: 255px;
-        text-align: center;
-        text-decoration: none;
-        color: black;
+        @extend .service-3;
     }
     .service-5 {
-        display: block;
-        width: 255px;
-        text-align: center;
-        text-decoration: none;
-        color: black;
+        @extend .service-3;
     }
     .service-6 {
-        display: block;
-        width: 255px;
-        text-align: center;
-        text-decoration: none;
-        color: black;
+        @extend .service-3;
     }
 }
 .new {
