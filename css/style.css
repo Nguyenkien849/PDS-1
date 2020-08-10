@@ -1,9 +1,156 @@
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  .mobile {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header {
+    display: none;
+  }
+  .mobile {
+    background-image: url(../img/banner-mobile-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 587px;
+  }
+  .mobile .social-mobile, .mobile .phone-mobile, .mobile .email-mobile {
+    text-align: center;
+  }
+  .mobile .social-mobile a, .mobile .phone-mobile a, .mobile .email-mobile a {
+    color: white;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .mobile .slogan-mobile h1 {
+    color: white;
+    font-size: 27px;
+  }
+  .mobile .logo-menu a {
+    color: white !important;
+  }
+  .mobile .connected-mobile {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile .connected-mobile .phone-mobile-1 {
+    color: white;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 15px;
+  }
+  .mobile .connected-mobile .recieve-mobile {
+    color: white;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .mobile {
+    background-image: url(../img/banner-mobile-3.png);
+    height: 456px;
+    background-repeat: no-repeat;
+  }
+  .mobile .social-mobile, .mobile .phone-mobile, .mobile .email-mobile {
+    text-align: center;
+  }
+  .mobile .social-mobile a, .mobile .phone-mobile a, .mobile .email-mobile a {
+    color: white;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .mobile .slogan-mobile h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .mobile .connected-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile .connected-mobile .phone-mobile-1 {
+    color: white;
+    font-size: 12px;
+    display: block;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid white;
+    border-radius: 16px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .mobile .connected-mobile .recieve-mobile {
+    color: white;
+    font-size: 12px;
+    display: block;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid white;
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+  .mobile {
+    background-image: url(../img/banner-mobile-2.png);
+    background-repeat: no-repeat;
+    height: 286px;
+  }
+  .mobile .social-mobile, .mobile .phone-mobile, .mobile .email-mobile {
+    text-align: center;
+  }
+  .mobile .social-mobile a, .mobile .phone-mobile a, .mobile .email-mobile a {
+    color: white;
+    font-size: 10px;
+  }
+}
+
 .header {
   background-image: url(../img/banner-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 800px;
+}
+
+.header .logo {
+  text-align: center;
 }
 
 .header .social {
@@ -30,52 +177,50 @@
 
 .header .slogan {
   color: white;
-  font-size: 35px;
-  text-align: center;
+  font-size: 43px;
   margin-top: 150px;
 }
 
 .header .slogan p {
-  width: 800px;
-  margin-left: 160px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header .helo {
+  margin-right: 15px;
 }
 
 .header .connected {
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header .connected a {
+.header .connected .phone-1, .header .connected .receive {
   display: block;
-  width: 200px;
+  width: 150px;
   height: 50px;
   line-height: 50px;
-  border: 2px solid white;
+  border: 1px solid white;
   text-align: center;
   border-radius: 25px;
 }
 
-.header .connected a:hover {
-  background-color: blue;
+.header .connected .phone-1:hover, .header .connected .receive:hover {
+  background-color: #52cfda;
   color: white;
   text-decoration: none;
 }
 
-.header .phone {
-  padding-left: 350px;
+.header .connected .receive {
+  margin-left: 15px;
 }
 
-.header .phone a {
-  display: block;
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  border: 2px solid white;
-  text-align: center;
-  border-radius: 25px;
-}
-
-.header .phone a:hover {
-  background-color: blue;
+.header .connected .receive a:hover {
+  background-color: #52cfda;
   color: white;
   text-decoration: none;
 }
@@ -138,28 +283,69 @@
 
 .service .service-1 {
   display: block;
-  width: 255px;
-  margin-left: 250px;
   text-align: center;
   text-decoration: none;
   color: black;
+  position: relative;
+  border: 2px solid #e6e6e6;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.service .service-1 img {
+  position: absolute;
+  top: -45px;
+  right: 90px;
+}
+
+.service .service-1 h6 {
+  margin-top: 50px;
 }
 
 .service .service-2 {
   display: block;
-  width: 255px;
-  margin-left: 40px;
   text-align: center;
   text-decoration: none;
   color: black;
+  position: relative;
+  border: 2px solid #e6e6e6;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.service .service-2 img {
+  position: absolute;
+  top: -45px;
+  right: 90px;
+}
+
+.service .service-2 h6 {
+  margin-top: 50px;
 }
 
 .service .service-3, .service .service-4, .service .service-5, .service .service-6 {
   display: block;
-  width: 255px;
   text-align: center;
   text-decoration: none;
   color: black;
+  position: relative;
+  border: 2px solid #e6e6e6;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.service .service-3 img, .service .service-4 img, .service .service-5 img, .service .service-6 img {
+  position: absolute;
+  top: -45px;
+  right: 90px;
+}
+
+.service .service-3 h6, .service .service-4 h6, .service .service-5 h6, .service .service-6 h6 {
+  margin-top: 50px;
+}
+
+.service .service-7 {
+  text-align: center;
 }
 
 .new h2 {
