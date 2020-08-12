@@ -7,8 +7,30 @@
     background-color: $bgcolor;
     color: $colors;
 }
+@media (min-width: 1200px) {
+    .footer-mobile {
+        display: none;
+    }
+    .service-mobile {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+}
 
-@media screen and (min-width: 992px) and (max-width: 1500px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .service-1, .service-2, .service-3, .service-4, .service-5, .service-6 {
+        img {
+            right: 65px !important;
+        }
+    }
+    .footer-mobile {
+        display: none;
+    }
+    .service-mobile {
+        display: none;
+    }
     .mobile {
         display: none;
     }
@@ -18,6 +40,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .service {
+        display: none;
+    }
     .header {
         display: none;
     }
@@ -34,10 +59,16 @@
             }
         }
         .phone-mobile {
-            @extend .social-mobile;
+            text-align: center;
+            a {
+                color: white;
+            }
         }
         .email-mobile {
-            @extend .phone-mobile;
+            text-align: center;
+            a {
+                color: white;
+            }
         }
         .slogan-mobile {
             text-align: center;
@@ -79,6 +110,12 @@
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+    .service {
+        display: none;
+    }
     .header {
         display: none;
     }
@@ -87,6 +124,18 @@
         height: 456px;
         background-repeat: no-repeat;
         .social-mobile {
+            text-align: center;
+            a {
+                color: white;
+            }
+        }
+        .phone-mobile {
+            text-align: center;
+            a {
+                color: white;
+            }
+        }
+        .email-mobile {
             text-align: center;
             a {
                 color: white;
@@ -129,6 +178,12 @@
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
+    .footer {
+        display: none;
+    }
+    .service {
+        display: none;
+    }
     .header {
         display: none;
     }
@@ -145,14 +200,72 @@
                 }
             }
         }
+        .phone-mobile {
+            text-align: center;
+            a{
+                @include colorvsfont(white, 12px );
+            }
+        }
         .email-mobile {
+            text-align: center;
             a {
                 @include colorvsfont(white,12px )
             }
         }
+        .logo-menu {
+            .brand-mobile-2 {
+                padding-top: 0px !important;
+            }
+        }
+        .slogan-mobile {
+            text-align: center;
+            h1 {
+                @include colorvsfont(white, 17px);
+            }
+        }
+        .connected-mobile {
+            .phone-mobile-1 {
+                display: block;
+                @include colorvsfont(white,10px );
+                text-align: center;
+                width: 90px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid white;
+                border-radius: 14px;
+                margin-right: 5px;
+            }
+            .recieve-mobile {
+                display: block;
+                @include colorvsfont(white,9px );
+                text-align: center;
+                width: 90px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid white;
+                border-radius: 14px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 575px) {
+    .news-mobile {
+        text-align: center;
+    }
+}
+.service-mobile {
+    a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
+.footer-mobile {
+    background-color: #151719;
+}
 
 .header {
     background-image: url(../img/banner-1.png);
@@ -350,6 +463,11 @@
         }
     }
     .infor {
+        color: white;
+    }
+}
+.footer-mobile {
+    h6, p {
         color: white;
     }
 }
