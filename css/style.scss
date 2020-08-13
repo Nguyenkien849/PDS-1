@@ -25,6 +25,27 @@
             right: 65px !important;
         }
     }
+<<<<<<< HEAD
+    .footer-1 {
+        padding-top: 110px !important;        
+        .brand-3 {
+            img {
+                margin-bottom: 20px !important;
+            }
+        }
+        .infor {
+            p {
+                margin-bottom: 8px;
+            }
+        }
+        .fanpage-1 {
+            img {
+                width: 250px;
+            }
+        }
+    }
+=======
+>>>>>>> develop
     .footer-mobile {
         display: none;
     }
@@ -36,10 +57,60 @@
     }
     .header {
         display: block;
+        height: 690px !important;
     }
 }
 
+<<<<<<< HEAD
+@media screen and (min-width:767.9px) and (max-width: 768.1px) {
+    .mobile {
+        height: 430px !important;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1025px) {
+    .header {
+        height: 600px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+    .footer-mobile {
+        display: none;
+    }
+    .footer-1 {
+        padding-top: 90px !important;
+        .brand-3 {
+            padding: 0px !important;
+            img {
+                margin-bottom: 15px !important;
+                width: 180px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        .infor {
+            padding: 0px !important;
+            h6 {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+        .fanpage-1 {
+            text-align: center;
+            padding: 0px !important;
+            img {
+                width: 180px;
+            }
+        }
+    }
+=======
 @media screen and (min-width: 768px) and (max-width: 992px) {
+>>>>>>> develop
     .service {
         display: none;
     }
@@ -47,17 +118,17 @@
         display: none;
     }
     .mobile {
-        background-image: url(../img/banner-mobile-4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 587px;
+        height: 550px;
         .social-mobile {
             text-align: center;
+            padding-top: 10px;
             a {
                 color: white;
             }
         }
+<<<<<<< HEAD
+        
+=======
         .phone-mobile {
             text-align: center;
             a {
@@ -70,20 +141,22 @@
                 color: white;
             }
         }
+>>>>>>> develop
         .slogan-mobile {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 120px;
             h1 {
                 @include colorvsfont(white, 27px);
             }
         }
         .logo-menu {
+            margin-top: 10px;
             a {
                 color: white !important;
             }
         }
         .connected-mobile {
-            margin-top: 30px;
+            margin-top: 10px;
             display: flex;
             justify-content: center;
             .phone-mobile-1 {
@@ -94,7 +167,8 @@
                 line-height: 40px;
                 border: 1px solid white;
                 border-radius: 20px;
-                margin-right: 15px;
+                margin-right: 10px;
+                text-align: center;
             }
             .recieve-mobile {
                 color: white;
@@ -104,12 +178,17 @@
                 line-height: 40px;
                 border: 1px solid white;
                 border-radius: 20px;
-                margin-left: 15px;
+                margin-left: 10px;
+                text-align: center;
             }
         }
     }
 }
+<<<<<<< HEAD
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
+=======
 @media screen and (min-width: 480px) and (max-width: 768px) {
+>>>>>>> develop
     .footer {
         display: none;
     }
@@ -120,15 +199,24 @@
         display: none;
     }
     .mobile {
-        background-image: url(../img/banner-mobile-3.png);
-        height: 456px;
-        background-repeat: no-repeat;
+        height: 420px;
         .social-mobile {
             text-align: center;
+            padding-top: 15px;
             a {
+                font-size: 13px;
                 color: white;
             }
         }
+<<<<<<< HEAD
+        .logo-menu {
+            .navbar-nav {
+                background-color: white;
+                opacity: 0.5;
+                a {
+                    @include colorvsfont(black, 15px );
+                }
+=======
         .phone-mobile {
             text-align: center;
             a {
@@ -139,11 +227,12 @@
             text-align: center;
             a {
                 color: white;
+>>>>>>> develop
             }
         }
         .slogan-mobile {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 100px;
             h1 {
                 @include colorvsfont(white, 20px );
             }
@@ -177,7 +266,22 @@
     }
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 250px) and (max-width: 479.9px) {
+    .utility {
+        margin-top: 110px;
+        img {
+            width: 80px;
+        }
+    }
+    .introduce-1 {
+        .icp {
+            font-size: 25px;
+        }
+    }
+=======
 @media screen and (min-width: 250px) and (max-width: 480px) {
+>>>>>>> develop
     .footer {
         display: none;
     }
@@ -188,18 +292,58 @@
         display: none;
     }
     .mobile {
-        background-image: url(../img/banner-mobile-2.png);
-        background-repeat: no-repeat;
-        height: 286px;
         .social-mobile {
-            text-align: center;
-            a {
-                @include colorvsfont(white,12px );
-                i {
-                    font-size: 12px !important;
-                }
+            display: none;
+        }
+        
+        .logo-menu {
+            .brand-mobile-2 {
+                padding-top: 0px !important;
+                margin-top: 10px;
+                margin-bottom: 10px;
+               .navbar-nav {
+                   background-color: white;
+                   opacity: 0.5;
+                    a {
+                        font-size: 12px;
+                        color: black !important;
+                    }
+               }
             }
         }
+        .slogan-mobile {
+            margin-top: 85px;
+            text-align: center;
+            h1 {
+                @include colorvsfont(white, 14px);
+            }
+        }
+<<<<<<< HEAD
+        .connected-mobile {
+            display: flex;
+            justify-content: center;
+            .phone-mobile-1 {
+                display: block;
+                @include colorvsfont(white,10px );
+                text-align: center;
+                width: 90px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid white;
+                border-radius: 14px;
+                margin-right: 5px;
+            }
+            .recieve-mobile {
+                display: block;
+                @include colorvsfont(white,9px );
+                text-align: center;
+                width: 90px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid white;
+                border-radius: 14px;
+                margin-left: 5px;
+=======
         .phone-mobile {
             text-align: center;
             a{
@@ -210,6 +354,7 @@
             text-align: center;
             a {
                 @include colorvsfont(white,12px )
+>>>>>>> develop
             }
         }
         .logo-menu {
@@ -262,68 +407,125 @@
         }
     }
 }
+@media screen and (min-width: 250px) and (max-width: 575px) {
+    .news-mobile {
+        text-align: center;
+    }
+}
+.service-mobile {
+    a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
 
 .footer-mobile {
     background-color: #151719;
 }
 
+<<<<<<< HEAD
+.mobile {
+    .banner-header-mobile {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+=======
+.footer-mobile {
+    background-color: #151719;
+>>>>>>> develop
+}
+
 .header {
-    background-image: url(../img/banner-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
+    height: 790px;
+    .banner-header {
+        right: 0px;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
     .logo {
         text-align: center;
     }
     .social {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid white; 
+        a {
+            color: white;
+        }
     }
-    a {
-        color: white;
+    .menu-1 {
+        a {
+            color: white;
+        }
     }
     .contact {
         display: flex; 
         justify-content: flex-end;   
         border-bottom: 1px solid white;
-        a:hover {
+        a {
+            color: white;
+             &:hover {
             text-decoration: none;
+            }
+        }
+    }
+    .menu-2 {
+        a{
+            color: white;
         }
     }
     .slogan {
+        text-align: center;
         @include colorvsfont(white,43px );
-        margin-top: 150px;
+        margin-top: 130px;
+        margin-bottom: 20px;
         p {
             text-align: center;
             font-weight: bold;
         }
     }
-    .helo {
-        margin-right: 15px;
-    }
     .connected {
         display: flex;
         justify-content: center;
-        .phone-1 {
+        .phone {
+            margin-right: 15px;
+            color: white;
             display: block;
             width: 150px;
             height: 50px;
             line-height: 50px;
-            border: 1px solid white;
             text-align: center;
+            border: 1px solid white;
             border-radius: 25px;
+            text-decoration: none;
             &:hover {
-                background-color: #52cfda;
+                background-color: #56d0d8;
                 color: white;
-                text-decoration: none;
             }
         }
         .receive {
             margin-left: 15px;
-            @extend .phone-1;
-            a:hover {
-                @include bgcolorvscolor(#52cfda, white);
-                text-decoration: none;
+            color: white;
+            display: block;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 25px;
+            text-decoration: none;
+            &:hover {
+                background-color: #56d0d8;
+                color: white;
             }
         }
     }
@@ -450,10 +652,10 @@
     }
 }
 .footer {
-    background-image: url(../img/banner-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 440px;
+    .banner-footer {
+        position: absolute;
+        left: 0px;
+    }
     .footer-1 {
         padding-top: 150px;
     }
