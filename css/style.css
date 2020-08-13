@@ -14,6 +14,18 @@
   .service-1 img, .service-2 img, .service-3 img, .service .service-4 img, .service .service-5 img, .service .service-6 img, .service-4 img, .service-5 img, .service-6 img {
     right: 65px !important;
   }
+  .footer-1 {
+    padding-top: 110px !important;
+  }
+  .footer-1 .brand-3 img {
+    margin-bottom: 20px !important;
+  }
+  .footer-1 .infor p {
+    margin-bottom: 8px;
+  }
+  .footer-1 .fanpage-1 img {
+    width: 250px;
+  }
   .footer-mobile {
     display: none;
   }
@@ -25,10 +37,57 @@
   }
   .header {
     display: block;
+    height: 690px !important;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 767.9px) and (max-width: 768.1px) {
+  .mobile {
+    height: 430px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1025px) {
+  .header {
+    height: 600px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .footer-mobile {
+    display: none;
+  }
+  .footer-1 {
+    padding-top: 90px !important;
+  }
+  .footer-1 .brand-3 {
+    padding: 0px !important;
+  }
+  .footer-1 .brand-3 img {
+    margin-bottom: 15px !important;
+    width: 180px;
+  }
+  .footer-1 .brand-3 p {
+    font-size: 12px;
+  }
+  .footer-1 .infor {
+    padding: 0px !important;
+  }
+  .footer-1 .infor h6 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .footer-1 .infor p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .footer-1 .fanpage-1 {
+    text-align: center;
+    padding: 0px !important;
+  }
+  .footer-1 .fanpage-1 img {
+    width: 180px;
+  }
   .service {
     display: none;
   }
@@ -36,43 +95,31 @@
     display: none;
   }
   .mobile {
-    background-image: url(../img/banner-mobile-4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 587px;
+    height: 550px;
   }
   .mobile .social-mobile {
     text-align: center;
+    padding-top: 10px;
   }
   .mobile .social-mobile a {
     color: white;
   }
-  .mobile .phone-mobile {
-    text-align: center;
-  }
-  .mobile .phone-mobile a {
-    color: white;
-  }
-  .mobile .email-mobile {
-    text-align: center;
-  }
-  .mobile .email-mobile a {
-    color: white;
-  }
   .mobile .slogan-mobile {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 120px;
   }
   .mobile .slogan-mobile h1 {
     color: white;
     font-size: 27px;
   }
+  .mobile .logo-menu {
+    margin-top: 10px;
+  }
   .mobile .logo-menu a {
     color: white !important;
   }
   .mobile .connected-mobile {
-    margin-top: 30px;
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,7 +135,8 @@
     line-height: 40px;
     border: 1px solid white;
     border-radius: 20px;
-    margin-right: 15px;
+    margin-right: 10px;
+    text-align: center;
   }
   .mobile .connected-mobile .recieve-mobile {
     color: white;
@@ -98,11 +146,12 @@
     line-height: 40px;
     border: 1px solid white;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 10px;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
   .footer {
     display: none;
   }
@@ -113,31 +162,27 @@
     display: none;
   }
   .mobile {
-    background-image: url(../img/banner-mobile-3.png);
-    height: 456px;
-    background-repeat: no-repeat;
+    height: 420px;
   }
   .mobile .social-mobile {
     text-align: center;
+    padding-top: 15px;
   }
   .mobile .social-mobile a {
+    font-size: 13px;
     color: white;
   }
-  .mobile .phone-mobile {
-    text-align: center;
+  .mobile .logo-menu .navbar-nav {
+    background-color: white;
+    opacity: 0.5;
   }
-  .mobile .phone-mobile a {
-    color: white;
-  }
-  .mobile .email-mobile {
-    text-align: center;
-  }
-  .mobile .email-mobile a {
-    color: white;
+  .mobile .logo-menu .navbar-nav a {
+    color: black;
+    font-size: 15px;
   }
   .mobile .slogan-mobile {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   .mobile .slogan-mobile h1 {
     color: white;
@@ -177,7 +222,16 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 480px) {
+@media screen and (min-width: 250px) and (max-width: 479.9px) {
+  .utility {
+    margin-top: 110px;
+  }
+  .utility img {
+    width: 80px;
+  }
+  .introduce-1 .icp {
+    font-size: 25px;
+  }
   .footer {
     display: none;
   }
@@ -187,44 +241,37 @@
   .header {
     display: none;
   }
-  .mobile {
-    background-image: url(../img/banner-mobile-2.png);
-    background-repeat: no-repeat;
-    height: 286px;
-  }
   .mobile .social-mobile {
-    text-align: center;
-  }
-  .mobile .social-mobile a {
-    color: white;
-    font-size: 12px;
-  }
-  .mobile .social-mobile a i {
-    font-size: 12px !important;
-  }
-  .mobile .phone-mobile {
-    text-align: center;
-  }
-  .mobile .phone-mobile a {
-    color: white;
-    font-size: 12px;
-  }
-  .mobile .email-mobile {
-    text-align: center;
-  }
-  .mobile .email-mobile a {
-    color: white;
-    font-size: 12px;
+    display: none;
   }
   .mobile .logo-menu .brand-mobile-2 {
     padding-top: 0px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mobile .logo-menu .brand-mobile-2 .navbar-nav {
+    background-color: white;
+    opacity: 0.5;
+  }
+  .mobile .logo-menu .brand-mobile-2 .navbar-nav a {
+    font-size: 12px;
+    color: black !important;
   }
   .mobile .slogan-mobile {
+    margin-top: 85px;
     text-align: center;
   }
   .mobile .slogan-mobile h1 {
     color: white;
-    font-size: 17px;
+    font-size: 14px;
+  }
+  .mobile .connected-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mobile .connected-mobile .phone-mobile-1 {
     display: block;
@@ -270,12 +317,30 @@
   background-color: #151719;
 }
 
-.header {
-  background-image: url(../img/banner-1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.mobile .banner-header-mobile {
+  position: absolute;
+  right: 0px;
+  left: 0px;
   width: 100%;
-  height: 800px;
+}
+
+.mobile .banner-header-mobile img {
+  width: 100%;
+}
+
+.header {
+  height: 790px;
+}
+
+.header .banner-header {
+  right: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.header .banner-header img {
+  width: 100%;
 }
 
 .header .logo {
@@ -286,7 +351,11 @@
   border-bottom: 1px solid white;
 }
 
-.header a {
+.header .social a {
+  color: white;
+}
+
+.header .menu-1 a {
   color: white;
 }
 
@@ -300,23 +369,29 @@
   border-bottom: 1px solid white;
 }
 
+.header .contact a {
+  color: white;
+}
+
 .header .contact a:hover {
   text-decoration: none;
 }
 
+.header .menu-2 a {
+  color: white;
+}
+
 .header .slogan {
+  text-align: center;
   color: white;
   font-size: 43px;
-  margin-top: 150px;
+  margin-top: 130px;
+  margin-bottom: 20px;
 }
 
 .header .slogan p {
   text-align: center;
   font-weight: bold;
-}
-
-.header .helo {
-  margin-right: 15px;
 }
 
 .header .connected {
@@ -328,30 +403,40 @@
           justify-content: center;
 }
 
-.header .connected .phone-1, .header .connected .receive {
+.header .connected .phone {
+  margin-right: 15px;
+  color: white;
   display: block;
   width: 150px;
   height: 50px;
   line-height: 50px;
-  border: 1px solid white;
   text-align: center;
+  border: 1px solid white;
   border-radius: 25px;
+  text-decoration: none;
 }
 
-.header .connected .phone-1:hover, .header .connected .receive:hover {
-  background-color: #52cfda;
+.header .connected .phone:hover {
+  background-color: #56d0d8;
   color: white;
-  text-decoration: none;
 }
 
 .header .connected .receive {
   margin-left: 15px;
+  color: white;
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
-.header .connected .receive a:hover {
-  background-color: #52cfda;
+.header .connected .receive:hover {
+  background-color: #56d0d8;
   color: white;
-  text-decoration: none;
 }
 
 .utility {
@@ -481,11 +566,9 @@
   text-align: center;
 }
 
-.footer {
-  background-image: url(../img/banner-2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 440px;
+.footer .banner-footer {
+  position: absolute;
+  left: 0px;
 }
 
 .footer .footer-1 {
