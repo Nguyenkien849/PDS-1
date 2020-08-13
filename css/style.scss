@@ -25,7 +25,6 @@
             right: 65px !important;
         }
     }
-<<<<<<< HEAD
     .footer-1 {
         padding-top: 110px !important;        
         .brand-3 {
@@ -44,8 +43,6 @@
             }
         }
     }
-=======
->>>>>>> develop
     .footer-mobile {
         display: none;
     }
@@ -61,7 +58,6 @@
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width:767.9px) and (max-width: 768.1px) {
     .mobile {
         height: 430px !important;
@@ -108,9 +104,6 @@
             }
         }
     }
-=======
-@media screen and (min-width: 768px) and (max-width: 992px) {
->>>>>>> develop
     .service {
         display: none;
     }
@@ -126,22 +119,7 @@
                 color: white;
             }
         }
-<<<<<<< HEAD
         
-=======
-        .phone-mobile {
-            text-align: center;
-            a {
-                color: white;
-            }
-        }
-        .email-mobile {
-            text-align: center;
-            a {
-                color: white;
-            }
-        }
->>>>>>> develop
         .slogan-mobile {
             text-align: center;
             margin-top: 120px;
@@ -184,11 +162,7 @@
         }
     }
 }
-<<<<<<< HEAD
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
-=======
-@media screen and (min-width: 480px) and (max-width: 768px) {
->>>>>>> develop
     .footer {
         display: none;
     }
@@ -208,7 +182,6 @@
                 color: white;
             }
         }
-<<<<<<< HEAD
         .logo-menu {
             .navbar-nav {
                 background-color: white;
@@ -216,18 +189,6 @@
                 a {
                     @include colorvsfont(black, 15px );
                 }
-=======
-        .phone-mobile {
-            text-align: center;
-            a {
-                color: white;
-            }
-        }
-        .email-mobile {
-            text-align: center;
-            a {
-                color: white;
->>>>>>> develop
             }
         }
         .slogan-mobile {
@@ -266,7 +227,6 @@
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 250px) and (max-width: 479.9px) {
     .utility {
         margin-top: 110px;
@@ -279,9 +239,6 @@
             font-size: 25px;
         }
     }
-=======
-@media screen and (min-width: 250px) and (max-width: 480px) {
->>>>>>> develop
     .footer {
         display: none;
     }
@@ -318,7 +275,6 @@
                 @include colorvsfont(white, 14px);
             }
         }
-<<<<<<< HEAD
         .connected-mobile {
             display: flex;
             justify-content: center;
@@ -343,18 +299,6 @@
                 border: 1px solid white;
                 border-radius: 14px;
                 margin-left: 5px;
-=======
-        .phone-mobile {
-            text-align: center;
-            a{
-                @include colorvsfont(white, 12px );
-            }
-        }
-        .email-mobile {
-            text-align: center;
-            a {
-                @include colorvsfont(white,12px )
->>>>>>> develop
             }
         }
         .logo-menu {
@@ -425,7 +369,6 @@
     background-color: #151719;
 }
 
-<<<<<<< HEAD
 .mobile {
     .banner-header-mobile {
         position: absolute;
@@ -436,10 +379,6 @@
             width: 100%;
         }
     }
-=======
-.footer-mobile {
-    background-color: #151719;
->>>>>>> develop
 }
 
 .header {
