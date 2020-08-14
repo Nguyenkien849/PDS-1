@@ -297,6 +297,54 @@
     border-radius: 14px;
     margin-left: 5px;
   }
+  .mobile .logo-menu .brand-mobile-2 {
+    padding-top: 0px !important;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+  }
+  .mobile .slogan-mobile h1 {
+    color: white;
+    font-size: 17px;
+  }
+  .mobile .connected-mobile .phone-mobile-1 {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid white;
+    border-radius: 14px;
+    margin-right: 5px;
+  }
+  .mobile .connected-mobile .recieve-mobile {
+    display: block;
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid white;
+    border-radius: 14px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 575px) {
+  .news-mobile {
+    text-align: center;
+  }
+}
+
+.service-mobile a {
+  color: black;
+}
+
+.service-mobile a:hover {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 250px) and (max-width: 575px) {
