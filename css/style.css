@@ -54,6 +54,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .logo-menu-phone {
+    display: none !important;
+  }
+  .menu-phone {
+    display: none;
+  }
   .footer-mobile {
     display: none;
   }
@@ -97,23 +103,16 @@
   .mobile {
     height: 550px;
   }
-  .mobile .social-mobile {
-    text-align: center;
-    padding-top: 10px;
-  }
-  .mobile .social-mobile a {
-    color: white;
-  }
   .mobile .slogan-mobile {
+    padding-top: 50px;
     text-align: center;
-    margin-top: 120px;
   }
   .mobile .slogan-mobile h1 {
     color: white;
     font-size: 27px;
   }
   .mobile .logo-menu {
-    margin-top: 10px;
+    padding-top: 20px;
   }
   .mobile .logo-menu a {
     color: white !important;
@@ -152,6 +151,9 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .logo-menu {
+    display: none !important;
+  }
   .footer {
     display: none;
   }
@@ -164,25 +166,9 @@
   .mobile {
     height: 420px;
   }
-  .mobile .social-mobile {
-    text-align: center;
-    padding-top: 15px;
-  }
-  .mobile .social-mobile a {
-    font-size: 13px;
-    color: white;
-  }
-  .mobile .logo-menu .navbar-nav {
-    background-color: white;
-    opacity: 0.5;
-  }
-  .mobile .logo-menu .navbar-nav a {
-    color: black;
-    font-size: 15px;
-  }
   .mobile .slogan-mobile {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .mobile .slogan-mobile h1 {
     color: white;
@@ -223,6 +209,9 @@
 }
 
 @media screen and (min-width: 250px) and (max-width: 479.9px) {
+  .logo-menu {
+    display: none !important;
+  }
   .utility {
     margin-top: 110px;
   }
@@ -241,24 +230,8 @@
   .header {
     display: none;
   }
-  .mobile .social-mobile {
-    display: none;
-  }
-  .mobile .logo-menu .brand-mobile-2 {
-    padding-top: 0px !important;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .mobile .logo-menu .brand-mobile-2 .navbar-nav {
-    background-color: white;
-    opacity: 0.5;
-  }
-  .mobile .logo-menu .brand-mobile-2 .navbar-nav a {
-    font-size: 12px;
-    color: black !important;
-  }
   .mobile .slogan-mobile {
-    margin-top: 85px;
+    margin-top: 0px;
     text-align: center;
   }
   .mobile .slogan-mobile h1 {
@@ -333,7 +306,10 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 575px) {
+@media screen and (min-width: 250px) and (max-width: 568px) {
+  .slogan-mobile {
+    padding-top: 100px;
+  }
   .news-mobile {
     text-align: center;
   }
@@ -347,18 +323,37 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 250px) and (max-width: 575px) {
-  .news-mobile {
-    text-align: center;
+@media screen and (min-width: 250px) and (max-width: 330px) {
+  .utility {
+    margin-top: 70px !important;
   }
 }
 
-.service-mobile a {
-  color: black;
-}
-
-.service-mobile a:hover {
-  text-decoration: none;
+@media screen and (min-width: 250px) and (max-width: 380px) {
+  .our-service h1 {
+    font-size: 23px !important;
+  }
+  .logo-menu-phone {
+    margin-top: 10px !important;
+  }
+  .slogan-mobile {
+    padding-top: 75px !important;
+  }
+  .slogan-mobile h1 {
+    font-size: 12px !important;
+  }
+  .connected-mobile .phone-mobile-1 {
+    width: 60px !important;
+    height: 18px !important;
+    font-size: 5px !important;
+    line-height: 18px !important;
+  }
+  .connected-mobile .recieve-mobile {
+    width: 60px !important;
+    height: 18px !important;
+    font-size: 5px !important;
+    line-height: 18px !important;
+  }
 }
 
 .footer-mobile {
@@ -369,11 +364,90 @@
   position: absolute;
   right: 0px;
   left: 0px;
+  z-index: 0;
   width: 100%;
 }
 
 .mobile .banner-header-mobile img {
   width: 100%;
+}
+
+.mobile .logo-menu-phone {
+  margin-top: 35px;
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile .logo-menu-phone .nav-phone i {
+  margin-top: 10px;
+  color: #f39c12;
+  cursor: pointer;
+}
+
+.mobile .menu-phone {
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  background: #34495e;
+  height: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.mobile .menu-phone ul {
+  padding: 0px;
+  width: 270px;
+}
+
+.mobile .menu-phone ul li {
+  list-style-type: none;
+  width: 270px;
+  padding: 15px;
+}
+
+.mobile .menu-phone ul li a {
+  color: white;
+}
+
+.mobile .menu-phone ul li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile .menu-phone ul li:nth-child(1) i {
+  padding: 5px;
+  position: absolute;
+  right: 5%;
+  border: 1px solid #151719;
+  top: 1%;
+  width: 36px;
+  text-align: center;
+  border-radius: 26px;
+  background: white;
+  cursor: pointer;
+}
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  left: 0px !important;
 }
 
 .header {
@@ -485,6 +559,12 @@
 .header .connected .receive:hover {
   background-color: #56d0d8;
   color: white;
+}
+
+@media screen and (min-width: 568px) and (max-width: 767.9px) {
+  .mobile .slogan-mobile {
+    padding-top: 150px;
+  }
 }
 
 .utility {
@@ -614,6 +694,16 @@
   text-align: center;
 }
 
+.new .news-mobile img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.new .news-mobile img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .footer .banner-footer {
   position: absolute;
   left: 0px;
@@ -633,5 +723,21 @@
 
 .footer-mobile h6, .footer-mobile p {
   color: white;
+}
+
+.backtotop {
+  width: 90px;
+  position: fixed;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  border: 1px solid black;
+  opacity: 0.6;
+  border-radius: 20px;
+  background: gray;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
