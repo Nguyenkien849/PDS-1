@@ -11,6 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
   
 </head>
 <body>
@@ -19,52 +22,58 @@
             <img src="img/banner-1.png" alt="">
         </div>
         <div class="container">
-            <div class="row social-mobile">
-                <div class="col-4">
-                    <a href="#" class="mr-3"><i class='fab fa-twitter'></i></a>
-                    <a href="#" class="mr-3"><i class='fab fa-facebook-f'></i></a>
-                    <a href="#"><i class='fab fa-google-plus-g'></i></a>
+            <div class="logo-menu-phone">
+                <div class="logo-phone">
+                    <img src="img/brand-mobile-1.png" alt="brand" class="img-fluid">
                 </div>
-
-                <div class="col-4">
-                    <a href="#" class="mr-4"><i class='fas fa-phone-alt mr-2'></i> 0000000000</a>
-                </div>
-
-                <div class="col-4">
-                    <a href="#"><i style="font-size: 15px;" class="material-icons mr-2">email</i><a href="#">sfsgsgd@.com</a> </a>
+                <div class="nav-phone">
+                    <i class="fa fa-navicon" style="font-size:24px"></i>
                 </div>
             </div>
-            
-           
-
-            <div class="row logo-menu">
-                <div class="col-12" style="position: absolute;">
-                    <nav class="navbar navbar-expand-md navbar-dark brand-mobile-2">
-                        <a class="navbar-brand" href="#"><img class="img-fluid" src="img/brand-mobile-1.png" alt=""></a>
-                        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse justify-content-end navbar-collapse" id="collapsibleNavbar">
-                          <ul class="navbar-nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">TRANG CHỦ</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">LĨNH VỰC HOẠT ĐỘNG</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">GIỚI THIỆU</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TIN TỨC</a>
-                            </li>    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">LIÊN HỆ</a>
-                            </li> 
-                          </ul>
-                        </div>  
-                    </nav>
-                </div>
+            <div class="menu-phone">
+                <ul>
+                    <li>
+                        <a href="#" class="bla">TRANG CHỦ</a>
+                        <i class="fa fa-close close" style="font-size:24px"></i>
+                    </li>
+                    <li class="bla">
+                        <a href="#" class="lvhd-mobile">LĨNH VỰC HOẠT ĐỘNG</a>
+                    </li>
+                    <li class="bla">
+                        <a href="#" class="introduce-click">GIỚI THIỆU</a>
+                    </li>
+                    <li class="bla">
+                        <a href="#" class="news-click">TIN TỨC</a>
+                    </li>
+                    <li class="bla">
+                        <a href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo-menu">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <!-- Brand/logo -->
+                    <a class="navbar-brand" href="#"><img src="img/brand-mobile-1.png" alt=""></a>
+                    
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link lvhd-mobile" href="#">LĨNH VỰC HOẠT ĐỘNG</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link introduce-click" href="#">GIỚI THIỆU</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link news-click" href="#">TIN TỨC</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">LIÊN HỆ</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
 
             <div class="row slogan-mobile">
@@ -75,7 +84,7 @@
             </div>
             <div class="row">
                 <div class="col-12 connected-mobile">
-                    <a class="phone-mobile-1" href="#"><i class='fas fa-phone-alt mr-2'></i> 0000000000</a>
+                    <a class="phone-mobile-1" href="#"><i class='fas fa-phone-alt mr-2'></i> 0972973128</a>
                     <a class="recieve-mobile" href="#">NHẬN BÁO GIÁ</a>
                 </div>
                 
@@ -105,7 +114,7 @@
                                   <a class="nav-link" href="#">TRANG CHỦ</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">LĨNH VỰC HOẠT ĐỘNG</a>
+                                  <a class="nav-link lvhd-click" href="#">LĨNH VỰC HOẠT ĐỘNG</a>
                                 </li>
                             </ul>
                         </div>
@@ -119,18 +128,18 @@
                 <div class="col-md-4 p-0">
                     <div class="row ">
                         <div class="col-12 contact">
-                            <a href="#" class="mr-4"><i class='fas fa-phone-alt mr-2'></i> 0000000000</a>
-                            <a href="#"><i class="material-icons mr-2">email</i><a href="#">sfsgsgd@.com</a> </a>
+                            <a href="#" class="mr-4"><i class='fas fa-phone-alt mr-2'></i> 0972973128</a>
+                            <a href="#"><i class="material-icons mr-2">email</i><a href="#">Anhkien849@gmail</a> </a>
                         </div>
                     </div>
                     <div class="row menu-2">
                         <div class="col-12 p-0">
                             <ul class="nav nav-justified">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                  <a class="nav-link introduce-click" href="#">GIỚI THIỆU</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">TIN TỨC</a>
+                                  <a class="nav-link news-click" href="#">TIN TỨC</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">LIÊN HỆ</a>
@@ -147,7 +156,7 @@
             </div>
             <div class="row ">
                 <div class="col-12 connected">
-                    <a class="phone" href="#"><i class='fas fa-phone-alt mr-2'></i> 000000000</a>
+                    <a class="phone" href="#"><i class='fas fa-phone-alt mr-2'></i> 0972973128</a>
                     <a class="receive" href="#">NHẬN BÁO GIÁ</a>
                 </div>
             </div>
@@ -385,10 +394,10 @@
 
                 <div class="col-md-4 col-lg-4 infor">
                     <h6>CÔNG TY TNHH TRUYỀN THÔNG VÀ QUẢNG CÁO T&G MEDIA</h6>
-                    <p>Địa chỉ: fahaugfuagfaufguagfuagugauygfaugy</p>
-                    <p>Phone: 00000000000</p>
-                    <p>Email: sàkjahfahajjfa</p>
-                    <p>Website: ầnbkafkbaskfb</p>
+                    <p>Địa chỉ: 99 Trần Thái Tông Cầu Giấy Hà Nội</p>
+                    <p>Phone: 0972973128</p>
+                    <p>Email: Anhkien849@gmail.com</p>
+                    <p>Website: pogo.com</p>
                 </div>
 
                 <div class="col-md-4 col-lg-4 fanpage-1">
@@ -408,10 +417,10 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h6>CÔNG TY TNHH TRUYỀN THÔNG VÀ QUẢNG CÁO T&G MEDIA</h6>
-                <p>Địa chỉ: fahaugfuagfaufguagfuagugauygfaugy</p>
-                <p>Phone: 00000000000</p>
-                <p>Email: sàkjahfahajjfa</p>
-                <p>Website: ầnbkafkbaskfb</p>
+                <p>Địa chỉ: 99 Trần Thái Tông Cầu Giấy Hà Nội</p>
+                <p>Phone: 0972973128</p>
+                <p>Email: Anhkien849@gmail.com</p>
+                <p>Website: pogo.com</p>
             </div>
         </div>
         <div class="row">
@@ -420,6 +429,9 @@
             </div>
         </div>
     </div>
+
+    <div class="backtotop">Return</div>
+    <script src="js/external.js"></script>
 </body>
 </html>
 
