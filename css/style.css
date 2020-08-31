@@ -455,6 +455,8 @@
 }
 
 .header .banner-header {
+  -webkit-animation: showup 1s forwards;
+          animation: showup 1s forwards;
   right: 0px;
   left: 0px;
   position: absolute;
@@ -463,6 +465,35 @@
 
 .header .banner-header img {
   width: 100%;
+  opacity: 0;
+  -webkit-animation: showup 1s forwards;
+          animation: showup 1s forwards;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .header .logo {
@@ -509,6 +540,12 @@
   font-size: 43px;
   margin-top: 130px;
   margin-bottom: 20px;
+  opacity: 0;
+  left: -100%;
+  -webkit-animation: intro 1s forwards;
+          animation: intro 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .header .slogan p {
@@ -516,7 +553,34 @@
   font-weight: bold;
 }
 
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
+
 .header .connected {
+  opacity: 0;
+  -webkit-animation: bottom-up 1s forwards;
+          animation: bottom-up 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,6 +623,32 @@
 .header .connected .receive:hover {
   background-color: #56d0d8;
   color: white;
+}
+
+@-webkit-keyframes bottom-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bottom-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 @media screen and (min-width: 568px) and (max-width: 767.9px) {
