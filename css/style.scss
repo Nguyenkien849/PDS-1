@@ -441,12 +441,25 @@
 .header {
     height: 790px;
     .banner-header {
+        animation: showup 1s forwards;
         right: 0px;
         left: 0px;
         position: absolute;
         width: 100%;
         img {
             width: 100%;
+            opacity: 0;
+            animation: showup 1s forwards;
+        }
+        @keyframes showup {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     }
     .logo {
@@ -484,12 +497,29 @@
         @include colorvsfont(white,43px );
         margin-top: 130px;
         margin-bottom: 20px;
+        opacity: 0;
+        left: -100%;
+        animation: intro 1s forwards;
+        animation-delay: 1s;
         p {
             text-align: center;
             font-weight: bold;
         }
     }
+    @keyframes intro {
+        0% {
+            opacity: 0;
+            left: -100%;
+        }
+        100% {
+            opacity: 1;
+            left: 0%;
+        }
+    }
     .connected {
+        opacity: 0;
+        animation: bottom-up 1s forwards;
+        animation-delay: 1s;
         display: flex;
         justify-content: center;
         .phone {
@@ -524,6 +554,17 @@
                 color: white;
             }
         }
+    }
+    @keyframes bottom-up {
+        0% {
+            opacity: 0;
+            transform: translateY(250px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
     }
 }
 @media screen and (min-width: 568px) and (max-width: 767.9px) {
